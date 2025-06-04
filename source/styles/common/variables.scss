@@ -1,1 +1,29 @@
-/* здесь используйте глобальные переменные */
+/* FONTS */
+$main-font-inter: "Inter", sans-serif;
+
+$fz-default:                        18px;
+
+/* COLORS */
+$dark-color: #222222;
+$white-color: #ffffff;
+
+$accent-color: #111111;
+$border-color: #5e5e5e;
+// $main-background-color: #333333;
+// $second-background-color: #e0e0e0;
+
+/* GAPS */
+$section-gap: 45px;
+
+/* VIEWPORTS */
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+$vp-320:                            320px;
+$vp-375:                            375px;
+$vp-768:                            768px;
+$vp-1024:                           1024px;
+$vp-1280:                           1280px;
+$vp-1440:                           1440px;
+$vp-1920:                           1920px;

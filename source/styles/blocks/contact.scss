@@ -1,0 +1,70 @@
+.contact {
+  padding: size(25px) 0 size(50px);
+}
+
+.container {}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  gap: size(25px);
+}
+
+.contact__title {}
+
+.section-title {}
+
+.contact__form {
+  display: flex;
+  justify-content: space-between;
+  gap: size(30px);
+}
+
+.contact__form-column {
+  display: flex;
+  flex-direction: column;
+  gap: size(15px);
+  width: 100%;
+  max-width: size(534px);
+}
+
+.contact__label {
+  display: flex;
+  flex-direction: column;
+  gap: size(10px);
+
+  &--name {
+  }
+
+  &--email {
+  }
+
+  &--message {
+    .contact__message {
+      height: size(125px);
+    }
+  }
+
+}
+
+.contact__input,
+.contact__message {
+  border: size(1px) solid $border-color;
+  border-radius: size(10px);
+  padding: size(10px);
+  font-size: size(18px);
+  line-height: size(22px);
+
+  &::placeholder {
+    color: $border-color;
+    font-size: size(18px);
+    line-height: size(22px);
+  }
+}
+
+.contact__button {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  width: size(202px);
+  margin-left: auto;
+}

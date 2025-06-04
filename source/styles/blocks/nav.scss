@@ -1,0 +1,14 @@
+.nav {
+  display: flex;
+  align-items: center;
+  gap: size(63px);
+
+  &__link {
+    display: block;
+    padding: size(10px) 0;
+    font-size: size(24px);
+    line-height: size(29px);
+    color: $accent-color;
+    text-decoration: none;
+  }
+}

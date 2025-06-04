@@ -1,0 +1,40 @@
+{
+  "svguse": {
+    "scope": "html",
+    "prefix": "g-use",
+    "body": [
+      "<svg class=\"\">",
+      "  <use xlink:href=\"img/sprite.svg#$2\"></use>",
+      "</svg>"
+    ],
+    "description": "Snippet for use svg sprites"
+  },
+  "picture-mobile": {
+    "prefix": "g-picture-mobile",
+    "body": [
+      "<picture>",
+      "  <source media=\"(min-width: px)\" srcset=\"$1.webp 1x, $1.webp 2x\" width=\"$4\" height=\"$5\" type=\"image/webp\">",
+      "  <source media=\"(min-width: px)\" srcset=\"$1.webp 1x, $1.webp 2x\" width=\"$4\" height=\"$5\" type=\"image/webp\">",
+      "  <source media=\"(min-width: px)\" srcset=\"$1.webp 1x, $1.webp 2x\" width=\"$4\" height=\"$5\" type=\"image/webp\">",
+      "  <source media=\"(min-width: px)\" srcset=\"$1. 1x, $1. 2x\" width=\"$4\" height=\"$5\" type=\"image/png\">",
+      "  <source media=\"(min-width: px)\" srcset=\"$1. 1x, $1. 2x\" width=\"$4\" height=\"$5\" type=\"image/png\">",
+      "  <img class=\"image\" src=\"$1.$2\" srcset=\"$1. 2x\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "</picture>"
+    ],
+    "description": "Snippet for basic logo structure"
+  },
+  "picture-desktop": {
+    "prefix": "g-picture-desktop",
+    "body": [
+      "<picture>",
+      "  <source media=\"(max-width: px)\" srcset=\"$1.webp 1x, $1.webp 2x\" width=\"$4\" height=\"$5\" type=\"image/webp\">",
+      "  <source media=\"(max-width: px)\" srcset=\"$1.webp 1x, $1.webp 2x\" width=\"$4\" height=\"$5\" type=\"image/webp\">",
+      "  <source media=\"(max-width: px)\" srcset=\"$1.webp 1x, $1.webp 2x\" width=\"$4\" height=\"$5\" type=\"image/webp\">",
+      "  <source media=\"(max-width: px)\" srcset=\"$1. 1x, $1. 2x\" width=\"$4\" height=\"$5\" type=\"image/png\">",
+      "  <source media=\"(max-width: px)\" srcset=\"$1. 1x, $1. 2x\" width=\"$4\" height=\"$5\" type=\"image/png\">",
+      "  <img class=\"image\" src=\"$1.$2\" srcset=\"$1. 2x\" width=\"$4\" height=\"$5\" alt=\"$3\">",
+      "</picture>"
+    ],
+    "description": "Snippet for basic logo structure"
+  }
+}

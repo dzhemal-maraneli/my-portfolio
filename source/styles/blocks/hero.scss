@@ -1,0 +1,48 @@
+.hero {
+  padding: size(50px) 0;
+}
+
+.hero__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: size(25px);
+  align-items: center;
+}
+
+.hero__title {
+  position: relative;
+  margin: 0;
+  font-size: size(48px);
+  line-height: size(58px);
+  font-weight: 400;
+  padding: size(10px) 0 size(55px);
+
+  &::before {
+    content: "";
+    width: size(263px);
+    height: size(1px);
+    background-color: $border-color;
+    position: absolute;
+    left: 50%;
+    bottom: size(10px);
+    transform: translateX(-50%);
+  }
+}
+.hero__text {
+  margin: 0;
+  padding: size(10px) size(50px);
+  font-size: size(18px);
+  line-height: size(22px);
+}
+
+.hero__list {
+  display: flex;
+  gap: size(61px);
+}
+
+.hero__item {
+}
+
+.hero__link {
+}

@@ -1,0 +1,38 @@
+.about {
+  padding: size(77px) 0;
+}
+
+.about__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: size(25px);
+  align-items: center;
+}
+
+.about__title {}
+
+.section-title {}
+
+.about__text {
+  margin: 0;
+  padding: size(10px);
+}
+
+.main-text {}
+
+.about__list {
+  display: flex;
+  align-items: center;
+  gap: size(26px);
+}
+
+.about__item {
+
+}
+
+.about__item-icon {
+  display: block;
+  width: size(56px);
+  height: size(30px);
+}

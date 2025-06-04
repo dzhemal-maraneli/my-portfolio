@@ -1,0 +1,20 @@
+.section-title {
+  position: relative;
+  margin: 0;
+  font-size: size(36px);
+  line-height: size(44px);
+  font-weight: 400;
+  padding: size(10px) 0 size(30px);
+  text-align: center;
+
+  &::before {
+    content: "";
+    width: size(263px);
+    height: size(1px);
+    background-color: $border-color;
+    position: absolute;
+    left: 50%;
+    bottom: size(10px);
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "Текст": {
+    "prefix": "tx",
+    "body": [
+      "font-size: ${1}px;",
+      "line-height: ${2}px;"
+    ],
+    "description": "Базовые настройки текста"
+  },
+
+  "Текст и жирность": {
+    "prefix": "txw",
+    "body": [
+      "font-size: ${1}px;",
+      "line-height: ${2}px;",
+      "font-weight: ${3};"
+    ],
+    "description": "Текст и жирность"
+  },
+
+  "Состояния": {
+    "prefix": "hov",
+    "body": [
+      "&:hover {",
+        "",
+      "}",
+      "",
+      "&:focus {",
+        "",
+      "}",
+      "",
+      "&:active {",
+        "",
+      "}"
+    ],
+    "description": "Активные состояния элемента"
+  },
+
+  "before": {
+    "prefix": "bf",
+    "body": [
+      "&::before {",
+        "  content: \"\";",
+        "  width: ${1};",
+        "  height: ${2};",
+      "}"
+    ],
+    "description": "Before"
+  },
+
+  "after": {
+    "prefix": "af",
+    "body": [
+      "&::after {",
+        "  content: \"\";",
+        "  width: ${1};",
+        "  height: ${2};",
+      "}"
+    ],
+    "description": "After"
+  },
+
+  "media": {
+    "prefix": "media",
+    "body": [
+      "@media (min-width: \\$tablet-width) {",
+        "",
+      "}",
+      "",
+      "@media (min-width: \\$desktop-width) {",
+        "",
+      "}"
+    ],
+    "description": "media"
+  },
+
+  "imgset": {
+    "prefix": "imgset",
+    "body": [
+      "image-set(url(\"${1}@1x.webp\") 1x type(\"image/webp\"),",
+        "url(\"${1}@2x.webp\") 2x type(\"image/webp\"),",
+        "url(\"${1}@1x.${2}\") 1x type(\"image/png\"),",
+        "url(\"${1}@2x.${2}\") 2x type(\"image/png\"));"
+    ],
+    "description": "image-set"
+  }
+}

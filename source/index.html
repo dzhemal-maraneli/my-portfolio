@@ -1,17 +1,448 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-    <main>
-      <h1>Страница для старта</h1>
-    </main>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header">
+    <span class="header__logo">NAME</span>
+    <ul class="nav list-reset">
+      <li class="nav__item">
+        <a class="nav__link" href="">Home</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="">About</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="">Projects</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link btn" href="">Contact</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Страница для старта!!!</h1>
+    <section class="hero">
+      <div class="container hero__container">
+        <h2 class="hero__title">Developer Name</h2>
+        <p class="hero__text main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget finibus
+          urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada
+        </p>
+        <ul class="hero__list list-reset">
+          <li class="hero__item">
+            <a class="hero__link btn btn--white" href="">Projects</a>
+          </li>
+          <li class="hero__item">
+            <a class="hero__link btn" href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container about__container">
+        <h2 class="about__title section-title">About</h2>
+        <p class="about__text main-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget finibus
+          urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere malesuada
+        </p>
+        <ul class="about__list list-reset">
+          <li class="about__item">
+            <svg class="about__item-icon" width="56" height="30">
+              <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+            </svg>
+          </li>
+          <li class="about__item">
+            <svg class="about__item-icon" width="56" height="30">
+              <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+            </svg>
+          </li>
+          <li class="about__item">
+            <svg class="about__item-icon" width="56" height="30">
+              <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+            </svg>
+          </li>
+          <li class="about__item">
+            <svg class="about__item-icon" width="56" height="30">
+              <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container projects__container">
+        <h2 class="projects__title section-title">Projects</h2>
+
+        <ul class="projects__list list-reset">
+          <li class="projects__item">
+            <div class="projects__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x.webp 1x, ./images/projects/projects-placeholder-desktop@1x.webp 2x"
+                  width="513" height="374" type="image/webp">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.webp 1x, ./images/projects/projects-placeholder-desktop-small@1x.webp 2x"
+                  width="423" height="374" type="image/webp">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.webp 1x, ./images/projects/projects-placeholder-tablet@1x.webp 2x"
+                  width="696" height="374" type="image/webp">
+                <source media="(min-width: 375px)"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.webp 1x, ./images/projects/projects-placeholder-mobile@1x.webp 2x"
+                  width="327" height="374" type="image/webp">
+
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x. 1x, ./images/projects/projects-placeholder-desktop@1x.jpg 2x"
+                  width="513" height="374" type="image/jpeg">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.jpg 1x, ./images/projects/projects-placeholder-desktop-small@1x.jpg 2x"
+                  width="423" height="374" type="image/jpeg">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.jpg 1x, ./images/projects/projects-placeholder-tablet@1x.jpg 2x"
+                  width="696" height="374" type="image/jpeg">
+                <img class="projects__item-img" src="./images/projects/projects-placeholder-mobile@1x.jpg"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.jpg 2x" width="327" height="374"
+                  alt="Скриншот проекта">
+              </picture>
+            </div>
+
+            <h3 class="projects__item-title">Project Title</h3>
+
+            <p class="projects__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget
+              finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere
+              malesuada
+            </p>
+
+            <ul class="project__stack-list list-reset">
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <ul class="project__links list-reset">
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#github-icon"></use>
+                </svg>
+                </a>
+              </li>
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#link-icon"></use>
+                </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="projects__item">
+            <div class="projects__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x.webp 1x, ./images/projects/projects-placeholder-desktop@1x.webp 2x"
+                  width="513" height="374" type="image/webp">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.webp 1x, ./images/projects/projects-placeholder-desktop-small@1x.webp 2x"
+                  width="423" height="374" type="image/webp">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.webp 1x, ./images/projects/projects-placeholder-tablet@1x.webp 2x"
+                  width="696" height="374" type="image/webp">
+                <source media="(min-width: 375px)"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.webp 1x, ./images/projects/projects-placeholder-mobile@1x.webp 2x"
+                  width="327" height="374" type="image/webp">
+
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x. 1x, ./images/projects/projects-placeholder-desktop@1x.jpg 2x"
+                  width="513" height="374" type="image/jpeg">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.jpg 1x, ./images/projects/projects-placeholder-desktop-small@1x.jpg 2x"
+                  width="423" height="374" type="image/jpeg">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.jpg 1x, ./images/projects/projects-placeholder-tablet@1x.jpg 2x"
+                  width="696" height="374" type="image/jpeg">
+                <img class="projects__item-img" src="./images/projects/projects-placeholder-mobile@1x.jpg"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.jpg 2x" width="327" height="374"
+                  alt="Скриншот проекта">
+              </picture>
+            </div>
+
+            <h3 class="projects__item-title">Project Title</h3>
+
+            <p class="projects__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget
+              finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere
+              malesuada
+            </p>
+
+            <ul class="project__stack-list list-reset">
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <ul class="project__links list-reset">
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#github-icon"></use>
+                </svg>
+                </a>
+              </li>
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#link-icon"></use>
+                </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="projects__item">
+            <div class="projects__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x.webp 1x, ./images/projects/projects-placeholder-desktop@1x.webp 2x"
+                  width="513" height="374" type="image/webp">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.webp 1x, ./images/projects/projects-placeholder-desktop-small@1x.webp 2x"
+                  width="423" height="374" type="image/webp">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.webp 1x, ./images/projects/projects-placeholder-tablet@1x.webp 2x"
+                  width="696" height="374" type="image/webp">
+                <source media="(min-width: 375px)"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.webp 1x, ./images/projects/projects-placeholder-mobile@1x.webp 2x"
+                  width="327" height="374" type="image/webp">
+
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x. 1x, ./images/projects/projects-placeholder-desktop@1x.jpg 2x"
+                  width="513" height="374" type="image/jpeg">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.jpg 1x, ./images/projects/projects-placeholder-desktop-small@1x.jpg 2x"
+                  width="423" height="374" type="image/jpeg">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.jpg 1x, ./images/projects/projects-placeholder-tablet@1x.jpg 2x"
+                  width="696" height="374" type="image/jpeg">
+                <img class="projects__item-img" src="./images/projects/projects-placeholder-mobile@1x.jpg"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.jpg 2x" width="327" height="374"
+                  alt="Скриншот проекта">
+              </picture>
+            </div>
+
+            <h3 class="projects__item-title">Project Title</h3>
+
+            <p class="projects__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget
+              finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere
+              malesuada
+            </p>
+
+            <ul class="project__stack-list list-reset">
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <ul class="project__links list-reset">
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#github-icon"></use>
+                </svg>
+                </a>
+              </li>
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#link-icon"></use>
+                </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="projects__item">
+            <div class="projects__item-img-wrapper">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x.webp 1x, ./images/projects/projects-placeholder-desktop@1x.webp 2x"
+                  width="513" height="374" type="image/webp">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.webp 1x, ./images/projects/projects-placeholder-desktop-small@1x.webp 2x"
+                  width="423" height="374" type="image/webp">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.webp 1x, ./images/projects/projects-placeholder-tablet@1x.webp 2x"
+                  width="696" height="374" type="image/webp">
+                <source media="(min-width: 375px)"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.webp 1x, ./images/projects/projects-placeholder-mobile@1x.webp 2x"
+                  width="327" height="374" type="image/webp">
+
+                <source media="(min-width: 1440px)"
+                  srcset="./images/projects/projects-placeholder-desktop@1x. 1x, ./images/projects/projects-placeholder-desktop@1x.jpg 2x"
+                  width="513" height="374" type="image/jpeg">
+                <source media="(min-width: 1024px)"
+                  srcset="./images/projects/projects-placeholder-desktop-small@1x.jpg 1x, ./images/projects/projects-placeholder-desktop-small@1x.jpg 2x"
+                  width="423" height="374" type="image/jpeg">
+                <source media="(min-width: 744px)"
+                  srcset="./images/projects/projects-placeholder-tablet@1x.jpg 1x, ./images/projects/projects-placeholder-tablet@1x.jpg 2x"
+                  width="696" height="374" type="image/jpeg">
+                <img class="projects__item-img" src="./images/projects/projects-placeholder-mobile@1x.jpg"
+                  srcset="./images/projects/projects-placeholder-mobile@1x.jpg 2x" width="327" height="374"
+                  alt="Скриншот проекта">
+              </picture>
+            </div>
+
+            <h3 class="projects__item-title">Project Title</h3>
+
+            <p class="projects__item-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla interdum urna quis magna lobortis, eget
+              finibus urna vestibulum. Sed nec ex non justo dictum venenatis. Fusce nec purus nec mauris posuere
+              malesuada
+            </p>
+
+            <ul class="project__stack-list list-reset">
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+              <li class="project__stack-item">
+                <svg class="project__stack-item-icon" width="56" height="30">
+                  <use xlink:href="icons/stack.svg#stack-placeholder-icon"></use>
+                </svg>
+              </li>
+            </ul>
+
+            <ul class="project__links list-reset">
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#github-icon"></use>
+                </svg>
+                </a>
+              </li>
+              <li class="project__links-item">
+                <a class="project__link" href="">
+                  <svg class="project__link-icon" width="35" height="35">
+                  <use xlink:href="icons/stack.svg#link-icon"></use>
+                </svg>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container contact__container">
+        <h2 class="contact__title section-title">Contact</h2>
+
+        <form class="contact__form" action="">
+          <div class="contact__form-column">
+            <label class="contact__label contact__label--name" for="name">
+              Name
+              <input class="contact__input" type="text" id="name" placeholder="John Doe">
+            </label>
+            <label class="contact__label contact__label--email" for="email">
+              Email Address
+              <input class="contact__input" type="text" id="email" placeholder="example@example.com">
+            </label>
+          </div>
+          <div class="contact__form-column">
+            <label class="contact__label contact__label--message" for="message" placeholder="Enter your message here">
+              Your Message
+              <textarea class="contact__message" name="" id="message"></textarea>
+            </label>
+            <button class="contact__button btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <ul class="footer__list list-reset">
+        <li class="footer__list-item"></li>
+        <li class="footer__list-item"></li>
+        <li class="footer__list-item"></li>
+        <li class="footer__list-item"></li>
+        <li class="footer__list-item"></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

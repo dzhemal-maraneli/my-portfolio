@@ -1,0 +1,9 @@
+@function size($size-in-px) {
+  @return calc($size-in-px / $fz-default * 1rem);
+
+  // #{size(160px)} Если нужно использовать в функции.
+}
+
+@function size-desktop($size-in-px) {
+  @return calc($size-in-px / $vp-1440 * 100vw);
+}
